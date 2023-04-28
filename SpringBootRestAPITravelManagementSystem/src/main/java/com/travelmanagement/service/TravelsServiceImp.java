@@ -3,11 +3,13 @@ package com.travelmanagement.service;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
 
 import com.travelmanagement.model.Travels;
 import com.travelmanagement.repo.TravelRepo;
 @Service
+@Profile(value={"dev","local"})
 public class TravelsServiceImp implements TravelsService
 {
 	@Autowired
