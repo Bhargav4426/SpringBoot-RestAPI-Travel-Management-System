@@ -9,7 +9,7 @@ import org.springframework.stereotype.Service;
 import com.travelmanagement.model.Travels;
 import com.travelmanagement.repo.TravelRepo;
 @Service
-@Profile(value={"dev","local"})
+@Profile(value={"dev","local","prod"})
 public class TravelsServiceImp implements TravelsService
 {
 	@Autowired

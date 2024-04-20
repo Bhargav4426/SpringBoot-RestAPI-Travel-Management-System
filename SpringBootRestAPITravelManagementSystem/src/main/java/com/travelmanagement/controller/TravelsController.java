@@ -44,7 +44,7 @@ public class TravelsController
     {
     	return service.getOneTravels(id);
     }
-    @GetMapping("/getall")
+    @GetMapping(" ")
     public List<Travels> getAllTravelDetails()
     {
     	return service.getAllTravels();
